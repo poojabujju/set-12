@@ -1,14 +1,13 @@
 #include<stdio.h>
 void main()
 {
-int n,rem=0,r;
-printf("Enter the Number : );
+int n,count;
+printf("Enter the Number : ");
 scanf("%d",&n);
 while(n!=0)
 {
-n=n%10;
-rem=rem+n;
-r=rem/10;
+n=n/10;
+++count;
 }
-printf("%d",n);
+printf("%d",count);
 }
